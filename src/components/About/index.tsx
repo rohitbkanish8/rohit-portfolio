@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 
 const skills = [
   {
@@ -37,6 +37,10 @@ const skills = [
     value: 80,
   },
 ];
+
+export interface MyCustomCSS extends CSSProperties {
+  '--value': number;
+}
 
 const About = () => {
   return (
@@ -97,7 +101,7 @@ const About = () => {
             {skills.map((item) => (
               <div className="flex flex-col justify-center text-center items-center gap-8" key={item.id}>
                 <p className="text-2xl font-medium whitespace-nowrap">{item.name}</p>
-                <div className="radial-progress text-pink-600" style={{"--value":item.value}}>{item.value}%</div>
+                <div className="radial-progress text-pink-600" style={{"--value": item.value} as MyCustomCSS}>{item.value}%</div>
               </div>
             ))}
           </div>
