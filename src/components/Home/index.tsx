@@ -6,7 +6,7 @@ import TypewriterComponent from "typewriter-effect";
 
 const Home = () => {
   return (
-    <section className="min-h-screen w-full px-4 md:px-8 2xl:px-16 pt-32" id="#home">
+    <section className="min-h-screen w-full px-4 md:px-8 2xl:px-16 pt-32 flex justify-center items-center" id="#home">
       <div className="mx-auto grid h-full w-full grid-cols-1 lg:grid-cols-2 gap-16 items-center justify-center p-3">
         <div className="flex flex-col gap-6">
           <h1 className="bg-gradient-to-r from-red-400 to-pink-600 bg-clip-text md:text-6xl text-5xl font-extrabold text-transparent">
@@ -71,8 +71,8 @@ const Home = () => {
           <Image
             src="/images/img1.png"
             alt="profile"
-            width={500}
-            height={500}
+            width={1024}
+            height={1024}
           />
         </div>
       </div>
