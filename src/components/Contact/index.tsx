@@ -2,6 +2,7 @@ import { Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import React from "react";
 import { sendContactForm } from "@/lib/api";
+import { toast } from "react-toastify";
 
 const validationSchema = Yup.object().shape({
   email: Yup.string().email().required("Please input email"),
@@ -61,8 +62,15 @@ const Contact = () => {
             try {
               const res = await sendContactForm(values)
               console.log(res, 'res')
+              if (res.status === 200) {
+                toast.success("Email Sent Successfully")
+              }
+              else {
+                toast.error('Something went wrong!')
+              }
             } catch (err) {
               console.log(err, 'sdgj')
+              toast.error('Something went wrong!')
             }
             resetForm();
           }}

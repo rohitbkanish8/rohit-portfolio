@@ -4,6 +4,8 @@ import { type AppType } from "next/app";
 import "@/styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ["latin"] });
@@ -14,10 +16,11 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <ThemeProvider attribute="class">
+      <ThemeProvider attribute="class" defaultTheme="light">
         <main className={inter.className}>
           <Component {...pageProps} />
         </main>
+        <ToastContainer />
       </ThemeProvider>
     </SessionProvider>
   );

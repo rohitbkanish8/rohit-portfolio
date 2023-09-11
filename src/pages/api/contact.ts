@@ -17,7 +17,10 @@ const handler = async (req: any, res: any) => {
         ...mailOptions,
         subject: `Message from ${data.name}`,
         text: "Hello",
-        html: "<h1>Hello</h1>"
+        html: `<h1>Name: ${data.name}</h1>
+        <h2>Email: ${data.email}</h2>
+        <p>Message: ${data.message} </p>
+        `
       })
       return res.status(200).json({
         success: true

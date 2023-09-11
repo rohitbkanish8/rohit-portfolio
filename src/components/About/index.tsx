@@ -44,7 +44,7 @@ const About = () => {
       id="about"
       className="flex min-h-screen w-full items-center px-4 md:px-8 py-16 2xl:px-16"
     >
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-40">
         <div className="text-justify">
           <h1 className="bg-gradient-to-r from-red-400 to-pink-600 bg-clip-text md:text-6xl text-5xl font-extrabold uppercase tracking-widest text-transparent">
             About
@@ -90,19 +90,14 @@ const About = () => {
           </a>
         </div>
         <div className="text-justify">
-          <h2 className="py-4 text-2xl font-bold">Skills</h2>
-          <div className="flex flex-col gap-4 py-2 text-lg">
+          <h1 className="bg-gradient-to-r from-red-400 to-pink-600 bg-clip-text md:text-6xl text-5xl font-extrabold uppercase tracking-widest text-transparent mb-20">
+            Skills
+          </h1>
+          <div className="flex flex-wrap justify-around items-center gap-16 py-2 text-lg">
             {skills.map((item) => (
-              <div className="flex items-center gap-8" key={item.id}>
-                <p className="w-28 font-medium whitespace-nowrap">{item.name}</p>
-                <div className="flex items-center gap-8 flex-1">
-                  <progress
-                    className="progress progress-error w-full"
-                    value={item.value}
-                    max="100"
-                  />
-                  <p>{item.value}%</p>
-                </div>
+              <div className="flex flex-col justify-center text-center items-center gap-8" key={item.id}>
+                <p className="text-2xl font-medium whitespace-nowrap">{item.name}</p>
+                <div className="radial-progress text-pink-600" style={{"--value":item.value}}>{item.value}%</div>
               </div>
             ))}
           </div>
