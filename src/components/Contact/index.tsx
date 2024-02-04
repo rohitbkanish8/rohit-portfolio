@@ -23,7 +23,7 @@ const Contact = () => {
       className="grid min-h-screen w-full lg:grid-cols-2 grid-cols-1 gap-16 py-16 px-4 md:px-8 2xl:px-16 place-content-center"
     >
       <div>
-        <h1 className="bg-gradient-to-r from-green-400 from-lime-800 bg-clip-text md:text-6xl text-5xl font-extrabold uppercase tracking-widest text-transparent">
+        <h1 className="bg-gradient-to-r from-green-400 to-lime-800 bg-clip-text md:text-6xl text-5xl font-extrabold uppercase tracking-widest text-transparent">
           Contact Me
         </h1>
         <h2 className="py-4 text-2xl font-bold">Get In Touch</h2>
@@ -116,7 +116,7 @@ const Contact = () => {
                   <span className="px-4 text-red-500">{errors.message}</span>
                 )}
               </div>
-              <button className="duration-300 ease-in hover:scale-105 w-fit rounded-md bg-gradient-to-r from-green-400 from-lime-800 px-4 py-2 font-medium text-white">
+              <button className="duration-300 ease-in hover:scale-105 w-fit rounded-md bg-gradient-to-r from-green-400 to-lime-800 px-4 py-2 font-medium text-white">
                 Submit
               </button>
             </Form>

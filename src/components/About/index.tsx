@@ -51,15 +51,17 @@ const About = () => {
     >
       <div className="flex flex-col gap-40">
         <div className="mx-auto grid h-full w-full grid-cols-1 items-center justify-center gap-16 p-3 lg:grid-cols-2">
-          <div className="relative flex h-full w-full items-center justify-center">
-            <Image
-              src="/images/img1.png"
-              alt="profile"
-              draggable={false}
-              className="rounded-full overflow-hidden border"
-              width={1024}
-              height={1024}
-            />
+        <div className="relative flex h-full w-full items-center justify-center">
+            <div className=" fancy-border-radius overflow-hidden bg-gradient-to-tl from-green-400 to-lime-800">
+              <Image
+                src="/images/img1.png"
+                alt="profile"
+                draggable={false}
+                className=""
+                width={600}
+                height={600}
+              />
+            </div>
           </div>
           <div className="text-justify">
             <h1 className="bg-gradient-to-r from-green-400 to-lime-800 bg-clip-text text-5xl font-extrabold uppercase tracking-widest text-transparent md:text-6xl">

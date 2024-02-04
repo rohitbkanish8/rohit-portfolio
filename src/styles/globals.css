@@ -7,3 +7,7 @@
     @apply bg-slate-100 text-black dark:bg-black dark:text-white;
   }
 }
+
+.fancy-border-radius {
+  border-radius: 48% 52% 28% 72% / 66% 37% 63% 34%;
+}
