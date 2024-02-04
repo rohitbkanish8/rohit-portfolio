@@ -4,45 +4,59 @@ import Card from "../Card";
 const projects = [
   {
     id: 1,
-    title: 'Hulu Clone',
-    name: 'hulu',
-    link: 'https://hulu-rohit-clone.vercel.app',
-    image: '/images/hulu.png'
+    title: 'Distinct',
+    name: 'distinct',
+    link: 'https://distinct.so',
+    image: '/images/distinct.png'
   },
   {
     id: 2,
+    title: 'MisterZ',
+    name: 'misterz',
+    link: 'https://misterz.wethio.io',
+    image: '/images/misterz.png'
+  },
+  {
+    id: 3,
     title: 'Wethio Wallet',
     name: 'wallet-wethio',
     link: 'https://wallet.wethio.io',
     image: '/images/wethio.png'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Soundmint',
     name: 'soundmint',
     link: 'https://mainstaging.soundmint.xyz',
     image: '/images/soundmint.png'
   },
   {
-    id: 4,
+    id: 5,
+    title: 'Fractional Art',
+    name: 'fractionalart',
+    link: 'https://fractionalart-green.vercel.app ',
+    image: '/images/fractionalart.png'
+  },
+  {
+    id: 6,
+    title: 'Hulu Clone',
+    name: 'hulu',
+    link: 'https://hulu-rohit-clone.vercel.app',
+    image: '/images/hulu.png'
+  },
+  {
+    id: 7,
     title: 'Drum Machine',
     name: 'drum-machine',
     link: 'https://drum-machine-ruddy-kappa.vercel.app',
     image: '/images/drummachine.png'
   },
   {
-    id: 5,
+    id: 8,
     title: 'Quotes',
     name: 'quotes',
     link: 'https://quotes-jet-one.vercel.app',
     image: '/images/quotes.png'
-  },
-  {
-    id: 6,
-    title: 'Fractional Art',
-    name: 'fractionalart',
-    link: 'https://fractionalart-green.vercel.app ',
-    image: '/images/fractionalart.png'
   },
 ]
 

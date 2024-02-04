@@ -123,7 +123,7 @@ const Navbar = () => {
                 </li>
               </Link>
               <Link
-                href="/files/Rohit Bhardwaj.pdf"
+                href="/files/ROHIT_BHARDWAJ_CV.pdf"
                 target={"_blank"}
                 rel={"noreferrer"}
               >
