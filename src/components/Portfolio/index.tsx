@@ -52,7 +52,7 @@ const Portfolio = () => {
       id="portfolio"
       className="min-h-screen w-full flex flex-col justify-center items-start px-4 py-16 md:px-8 2xl:px-16"
     >
-      <h1 className="bg-gradient-to-r from-red-400 to-pink-600 bg-clip-text md:text-6xl text-5xl font-extrabold uppercase tracking-widest text-transparent">
+      <h1 className="bg-gradient-to-r from-green-400 from-lime-800 bg-clip-text md:text-6xl text-5xl font-extrabold uppercase tracking-widest text-transparent">
         Portfolio
       </h1>
       <div className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pt-8 pb-2 text-lg w-full place-items-center">

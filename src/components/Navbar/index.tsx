@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaSun, FaMoon } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
-import Image from "next/image";
 import { useTheme } from "next-themes";
 
 const Navbar = () => {
@@ -35,8 +33,8 @@ const Navbar = () => {
   return (
     <nav className="fixed z-50 h-20 w-full bg-white/30 shadow-xl backdrop-blur-lg">
       <div className="flex h-full w-full items-center justify-between px-4 md:px-8 2xl:px-16">
-        <div className="text-2xl font-extrabold">
-          <h1>Developer</h1>
+        <div className="text-3xl font-extrabold">
+          <h1>Rohit Bhardwaj</h1>
         </div>
         <div>
           <ul className="hidden items-center md:flex">
@@ -148,7 +146,7 @@ const Navbar = () => {
               </button>
             </ul>
             <div className="pt-40">
-              <p className="font-bold-200 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text uppercase tracking-widest text-transparent">
+              <p className="font-bold-200 bg-gradient-to-r from-purple-400 to-lime-800 bg-clip-text uppercase tracking-widest text-transparent">
                 Let&#39;s Connect
               </p>
               <div className="my-5 flex w-full items-center justify-start gap-8 sm:w-[80%]">
